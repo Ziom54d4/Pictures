@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('background.png');
+}
+
+.bg-jumpers {
+    background-color: #FF9966;
+}
+
+.jumpers header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.jumpers h1 {
+    text-align: center;
+    color: #CC9900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.jumpers p {
+    text-align: center;
+    color: #CC9966;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 16px;
+}
+
+.jumpers img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #2F4F4F;
+    border-radius: 20px;
+    transition: 500ms ease;
+}
+
+.jumpers figcaption {
+    color: #FFCC99;
+    text-align: center;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
+
+.jumpers {
+    margin-bottom: 10px;
+}
+
+/* Animacje i inne pierdoły */
+
+body::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FF3366;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #9999CC;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+}
+
+body::-webkit-scrollbar-button:vertical:decrement {
+    background: blue url("up.png") 2px 3px no-repeat;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+}
+
+body::-webkit-scrollbar-button:vertical:increment {
+    background: blue url("down.png") 2px 3px no-repeat;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+}
+
+@media (max-width: 991px) {
+    .jumpers img {
+        border: none;
+    }
+
+    .jumpers img:active {
+        transform: scale(0.9);
+        filter: grayscale(100%);
+    }
+}
+
+@media (min-width: 992px) {
+    .jumpers img:hover {
+        transform: scale(0.9);
+        filter: grayscale(100%);
+    }
+}
